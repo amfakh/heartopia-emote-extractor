@@ -272,7 +272,10 @@ def get_decryption_key(args: argparse.Namespace) -> bytes:
         return ENV_DECRYPT_KEY.encode("utf-8")
 
     print(f"Resolving key from metadata: {args.metadata_path}...")
-    return resolve_heartopia_key(args.metadata_path)
+    return resolve_heartopia_key(
+        metadata_path=args.metadata_path,
+        bundle_dir=args.bundle_dir,
+    )
 
 
 def main() -> None:
