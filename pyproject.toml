@@ -1,0 +1,25 @@
+[project]
+name = "heartopia-emote-extractor"
+version = "0.1.0"
+description = "Heartopia bird/seagull emote sticker collection and extractor"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "lz4>=4.4.0",
+    "pillow>=10.0.0",
+    "pycryptodome>=3.20.0",
+    "python-dotenv>=1.0.0",
+    "unitypy>=1.25.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

@@ -1,0 +1,24 @@
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Secrets & local configuration
+.env
+.env.*
+
+# Game assets & extraction output
+assets/
+*.ab
+*.resS
+*.dat
+
+# Linter cache
+.ruff_cache/
+.mypy_cache/
+
+# macOS
+.DS_Store
